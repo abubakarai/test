@@ -1,14 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shark Tank Premium</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <h1>abubakar</h1>
-    <h2>agrntic ai</h2>
-    <h3></h3>
-    <h4></h4>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">Shark <span>Tank</span></div>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#investors">Investors</a></li>
+                <li><a href="#apply">Apply</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#investors">Investors</a>
+        <a href="#apply">Apply</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="overlay"></div>
+
+        <div class="hero-content fade-up">
+            <h1>Pitch Your <span class="highlight">Best Idea</span></h1>
+            <p>Connect with the world's top investors and level up your startup.</p>
+            <button class="btn-primary">Start Pitching</button>
+        </div>
+    </section>
+
+    <!-- CARDS -->
+    <section class="investors-section">
+        <h2 class="section-title">Meet The Sharks</h2>
+
+        <div class="card-container">
+
+            <div class="glass-card float-up">
+                <img src="https://images.pexels.com/photos/3184613/pexels-photo-3184613.jpeg?auto=compress&cs=tinysrgb&w=800" />
+                <h3>Investor Name</h3>
+                <p>Tech Entrepreneur & Angel Investor</p>
+            </div>
+
+            <div class="glass-card float-up">
+                <img src="https://images.pexels.com/photos/3183198/pexels-photo-3183198.jpeg?auto=compress&cs=tinysrgb&w=800" />
+                <h3>Investor Name</h3>
+                <p>Marketing Expert & Venture Capitalist</p>
+            </div>
+
+            <div class="glass-card float-up">
+                <img src="https://images.pexels.com/photos/3182740/pexels-photo-3182740.jpeg?auto=compress&cs=tinysrgb&w=800" />
+                <h3>Investor Name</h3>
+                <p>Founder & Business Strategist</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- APPLY -->
+    <section class="apply-section fade-up" id="apply">
+        <h2>Ready To Pitch?</h2>
+        <p>Submit your idea and get a chance to impress top investors.</p>
+        <button class="btn-secondary">Apply Now</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Shark Tank Clone — Premium Edition</p>
+    </footer>
+
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("open");
+}
+</script>
+
 </body>
 </html>
